@@ -10,6 +10,7 @@ test('GET to /api/v1/status should return 200', async () => {
   expect(responseBody.updated_at).toEqual(parsedUpdatedAt)
 
   expect(responseBody.dependencies).toBeDefined()
+
   expect(responseBody.dependencies.database).toBeDefined()
 
   expect(responseBody.dependencies.database.version).toBeDefined()
