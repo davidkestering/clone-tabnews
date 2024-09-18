@@ -21,7 +21,7 @@ async function waitForAllServices() {
   }
 }
 
-async function clearDatabase(){
+async function clearDatabase() {
   await database.query("DROP SCHEMA PUBLIC CASCADE; CREATE SCHEMA PUBLIC;");
 }
 
